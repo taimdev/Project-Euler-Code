@@ -17,17 +17,15 @@ int main (int argc, char const *argv[]) {
    int sum = 0;
 
    while (number < LIMIT) {
-   	//printf("%d\n", number);
-
-       if (number % 2 == 0) {
-          sum += number;
-        }
-
+      //printf("%d\n", number); for debugging
+      if (number % 2 == 0) {
+         sum += number;
+      }
       store = number + prenumber;
       prenumber = number;
       number = store;
-
    }
+   
    printf("Sum is %d\n", sum);
 
    return EXIT_SUCCESS;
