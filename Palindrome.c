@@ -22,16 +22,15 @@ int main (int argc, char const *argv[]) {
    while (num1 < LIMIT) {
       while (num2 < LIMIT) {
          product = num1 * num2;
-
          if (intarray(product) == 1) {
             store = product;
          }
-
          num2 ++;
       }
       num2 = 0;
       num1 ++;
    }
+   
    printf("%d\n", store);
 
    return EXIT_SUCCESS;
@@ -60,7 +59,6 @@ int intarray (int product) {
       arraycounter /= 10;
       printf("digit is %d\n", reverse[i] );
       i ++;
-      
    }
 
    i = 0;
@@ -87,7 +85,7 @@ int intarray (int product) {
    if (palin == numlength) {
       result = 1;
    } else {
-   	  result = 0;
+   	result = 0;
    }
 
    printf("%d", result); 
