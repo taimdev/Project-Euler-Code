@@ -23,9 +23,7 @@ int main (int argc, char const *argv[]) {
             printf("%ld\n", store);
          } 
       }
-
    factornum ++;  
-
    }
 
    printf(" store is %ld\n", store);
