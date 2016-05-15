@@ -19,9 +19,9 @@ int main (int argc, char const *argv[]) {
       } else if (counter % 5 == 0) {
          sum += counter;
       }
-
       counter++;
    }
+   
    printf("%d\n", sum);
 
    return EXIT_SUCCESS;
